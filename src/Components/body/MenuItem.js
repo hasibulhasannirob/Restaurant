@@ -1,15 +1,6 @@
 import React from "react";
-import '../../Stylesheets/MenuItem.css';
-import {
-  Card,
-  CardImgOverlay,
-  CardText,
-  CardImg,
-  CardTitle,
-  CardBody,
-  CardSubtitle,
-  Button,
-} from "reactstrap";
+import "../../Stylesheets/MenuItem.css";
+import { Card, CardText, CardTitle, CardBody } from "reactstrap";
 
 const MenuItem = ({ dish, onSelectDish }) => {
   return (
@@ -20,7 +11,7 @@ const MenuItem = ({ dish, onSelectDish }) => {
         margin: "20px",
       }}
       color="dark"
-      onClick={ () => onSelectDish(dish)}
+      onClick={() => onSelectDish(dish)}
     >
       <img alt="Sample" src={dish.image} />
       <CardBody>
@@ -32,7 +23,6 @@ const MenuItem = ({ dish, onSelectDish }) => {
           BDT {dish.price}
         </CardTitle>
         <CardText style={{ color: "#b9bdb9" }}>{dish.category}</CardText>
-        
       </CardBody>
     </Card>
   );

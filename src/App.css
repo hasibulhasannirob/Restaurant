@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+li a {
+  margin: 20px;
+  text-decoration: none;
+  color: yellow;
+}
+li a:hover{
+  color: white;
+}

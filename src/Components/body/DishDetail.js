@@ -1,12 +1,10 @@
 import React from "react";
 import {
   Card,
-  CardImgOverlay,
   CardText,
   CardImg,
   CardTitle,
   CardBody,
-  CardSubtitle,
   Button,
 } from "reactstrap";
 import LoadComments from "./LoadComments";

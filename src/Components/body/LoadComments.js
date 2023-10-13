@@ -1,16 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardImgOverlay,
-  CardText,
-  CardImg,
-  CardTitle,
-  CardBody,
-  CardSubtitle,
-  Button,
-  CardHeader,
-} from "reactstrap";
-import dateFormat from 'dateformat';
+import { Card, CardText, CardTitle, CardBody } from "reactstrap";
+import dateFormat from "dateformat";
 
 const LoadComments = ({ comments }) => {
   return (
@@ -31,7 +21,9 @@ const LoadComments = ({ comments }) => {
                 <CardTitle tag="h5">{comment.author}</CardTitle>
                 <CardText>{comment.comment}</CardText>
                 <CardText>Rating: {comment.rating}</CardText>
-                <CardText>{dateFormat(comment.date,"dddd, mmmm dS, yyyy, h:MM:ss TT")}</CardText>
+                <CardText>
+                  {dateFormat(comment.date, "dddd, mmmm dS, yyyy, h:MM:ss TT")}
+                </CardText>
               </CardBody>
             </Card>
           </div>
