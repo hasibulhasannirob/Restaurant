@@ -25,6 +25,7 @@ class Menu extends Component {
   };
 
   render() {
+    document.title = "Menu";
     const menu = this.state.dishes.map((dish) => {
       return (
         <MenuItem dish={dish} onSelectDish={this.onSelectDish} key={dish.id} />
@@ -38,9 +39,12 @@ class Menu extends Component {
       <div className="container">
         <div className="row">
           <CardColumns>{menu}</CardColumns>
-          <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>{dishDetail}
+          <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
+            {dishDetail}
             <ModalFooter>
-              <Button color="danger" onClick={this.toggleModal}>Close</Button>
+              <Button color="danger" onClick={this.toggleModal}>
+                Close
+              </Button>
             </ModalFooter>
           </Modal>
         </div>
