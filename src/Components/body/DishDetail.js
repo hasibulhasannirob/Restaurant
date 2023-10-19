@@ -8,6 +8,7 @@ import {
   Button,
 } from "reactstrap";
 import LoadComments from "./LoadComments";
+import CommentForm from "./CommentForm";
 
 const DishDetail = ({ dish }) => {
   return (
@@ -36,6 +37,8 @@ const DishDetail = ({ dish }) => {
             Comments
           </CardTitle>
           <LoadComments comments={dish.comments} />
+          <hr/>
+          <CommentForm/>
         </CardBody>
       </Card>
     </div>

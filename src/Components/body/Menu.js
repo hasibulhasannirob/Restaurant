@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import MenuItem from "./MenuItem";
 import DISHES from "../../data/dishes";
 import DishDetail from "./DishDetail";
@@ -39,7 +39,7 @@ class Menu extends Component {
       <div className="container">
         <div className="row">
           <CardColumns>{menu}</CardColumns>
-          <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
+          <Modal isOpen={this.state.modalOpen}>
             {dishDetail}
             <ModalFooter>
               <Button color="danger" onClick={this.toggleModal}>
