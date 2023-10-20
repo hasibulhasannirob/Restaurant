@@ -37,7 +37,7 @@ class Menu extends Component {
     ) : null;
     return (
       <div className="container">
-        <div className="row">
+        <div className="row mb-5">
           <CardColumns>{menu}</CardColumns>
           <Modal isOpen={this.state.modalOpen}>
             {dishDetail}

@@ -38,7 +38,7 @@ const DishDetail = ({ dish }) => {
           </CardTitle>
           <LoadComments comments={dish.comments} />
           <hr/>
-          <CommentForm/>
+          <CommentForm dishId={dish.id}/>
         </CardBody>
       </Card>
     </div>
